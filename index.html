@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <div class="image-container">
+            <div class="opacity-div">
+                <div class="image-div">
+                    <img id="odin-img" src="./images/odin-lined.png" alt="">
+                    <p id="logo-para">ODIN</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-div">
+            <div class="block-1">
+                <p class="block1-text1">This is not a real online servive! You know you need something like this in your life to help you realize your deepest dreams. Sign up now to get started.</p>
+                <p class="block1-text2">You know you want to.</p>
+            </div>
+            <div class="block-2">
+                <h4>Let's do this!</h4>
+                <form id="form_div" action="">
+                    <div class="input-div">
+                        <div>
+                            <label for="first_name">FIRST NAME</label>
+                            <input type="text" name="first_name" id="first_name" placeholder="Thor">
+                        </div>
+                        <div>
+                            <label for="user_id">EMAIL</label>
+                            <input type="email" name="email" id="user_id" placeholder="you@example.com">
+                        </div>
+                        <div>
+                            <label for="user_password">PASSWORD</label>
+                            <input type="password" required pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}" title="Must be at least 8 characters, include a number and uppercase letter">
+                        </div>
+                    </div>
+                    <div>
+                        <div>
+                            <label for="">LAST NAME</label>
+                            <input type="text" name="last_name" id="last_name" placeholder="Odinson">
+                        </div>
+                        <div>
+                            <label for="phone">PHONE NUMBER</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+                        </div>
+                        <div>
+                            <label for="confirm_phone">CONFIRM PASSWORD</label>
+                            <input type="password" required pattern="(?=.*[A-Z])(?=.*[0-9]).{8,}" title="Must be at least 8 characters, include a number and uppercase letter">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="footer-div">
+                <button class="button" type="submit" form="form_div">Create Account</button>
+                <p>Already have an account? <a href="#">Log in</a></p>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
